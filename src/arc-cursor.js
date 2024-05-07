@@ -128,7 +128,7 @@ export const ArcCursor = {
     }
 
     const depthTestAndWrite = !this.data.onTop
-    const geometry = new THREE.RingBufferGeometry(0.00015, 0.015, 32)
+    const geometry = new THREE.RingGeometry(0.00015, 0.015, 32)
     const material = new THREE.MeshBasicMaterial({
       color: this.startColor.clone(),
       side: THREE.FrontSide,
